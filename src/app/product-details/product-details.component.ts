@@ -29,6 +29,7 @@ export class ProductDetailsComponent implements OnInit {
     if (id) {
       this.http.get(`https://fakestoreapi.com/products/${id}`).subscribe((data: any) => {
         this.product = data;
+         window.scrollTo(0, 0);
       });
     }
 
